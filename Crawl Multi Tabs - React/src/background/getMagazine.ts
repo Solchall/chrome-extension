@@ -1,7 +1,7 @@
-function getDom(domTexts: NodeListOf<Element>) {
+function getMagazineDom(domTexts: NodeListOf<Element>) {
   //console.log(domTexts)
   const chunk = [];
-  Array.from(domTexts).forEach((element:any) => {
+  Array.from(domTexts).forEach((element: any) => {
     const imgUrl = element
       .querySelector(".articleImg")
       .getElementsByTagName("img")[0].dataset.original;
@@ -38,7 +38,7 @@ function getDom(domTexts: NodeListOf<Element>) {
 
 chrome.runtime.sendMessage({
   action: "GET_DOM",
-  source: getDom(document.querySelectorAll("ul.article-list > li.listItem")),
+  source: getMagazineDom(document.querySelectorAll("ul.article-list > li.listItem")),
 });
 
 

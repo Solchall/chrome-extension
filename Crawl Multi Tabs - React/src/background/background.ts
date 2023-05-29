@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener(async function(request, sender, sendRespons
     chrome.scripting.executeScript({
       target: { tabId: activeTab.id },
       // /contentScript/contentScript.ts
-      files: ["getDom.js"],
+      files: ["getMagazine.js"],
     });
   }
   else if (request.action ==="White"){

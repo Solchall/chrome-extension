@@ -8,6 +8,7 @@ module.exports = {
     popup: path.resolve("src/popup/popup.tsx"),
     options: path.resolve("src/options/options.tsx"),
     getMagazine: path.resolve("src/background/getMagazine.ts"),
+    getCategoryItem: path.resolve("src/background/getCategoryItem.ts"),
     whiteOut: path.resolve("src/background/whiteOut.ts"),
     background: path.resolve("src/background/background.ts"),
     contentScript: path.resolve("src/contentScript/contentScript.ts"),
