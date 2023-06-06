@@ -1,0 +1,12 @@
+body {
+  background-color: white;
+  width:900px;
+  height:900px;
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
