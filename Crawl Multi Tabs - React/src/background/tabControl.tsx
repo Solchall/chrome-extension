@@ -1,6 +1,6 @@
 async function getAllTabs() {
   const tabs = await chrome.tabs.query({});
-  //console.log("tabControl", tabs);
+  console.log("tabControl", tabs);
   return tabs;
 }
 
